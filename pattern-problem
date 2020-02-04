@@ -1,0 +1,11 @@
+Take as input a number n, the number of rows
+Print the following pattern
+
+intput: 5
+
+output:
+  1
+ 232
+34543
+ 232
+  1
