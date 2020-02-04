@@ -1,0 +1,10 @@
+Rajan is one of the most important person in pepcoding. He is also a very kind hearted person and does his job perfectly. One day Moksh comes to Rajan and asks him to give a bar chart of admission in the last 'n' days.
+
+input:
+4
+2 3 4 0
+output:
+    *   
+  * *
+* * * 
+* * * 
