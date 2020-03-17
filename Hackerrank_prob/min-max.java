@@ -6,10 +6,14 @@ import java.util.*;
 import java.util.concurrent.*;
 import java.util.regex.*;
 
-public class Solution {
+import java.util.*;
 
-    public static void main(String[] args) {
-        Scanner scn = new Scanner(System.in);
+public class Main{
+
+public static void main(String[] args) {
+
+// write your code here.
+    Scanner scn = new Scanner(System.in);
     int arr[] = new int[5];
     for(int i =0;i<5;i++){
         arr[i] = scn.nextInt();
@@ -27,16 +31,26 @@ public class Solution {
             min = arr[i];
         }
     }
-    int sumMin=0, sumMax =0;
+    long sumMin=0, sumMax =0, sum=0;
     for(int i=0;i<5;i++){
+        if(min==max){
+            sum += arr[i];
+            
+        }
+        else{
         if(arr[i]!=min){
             sumMax += arr[i];
         }
         if(arr[i]!=max){
             sumMin += arr[i];
         }
+        }
     }
-    
+    if(min == max){
+        sum = sum - min;
+        System.out.print(sum + " " + sum );
+    }else{
     System.out.print(sumMin + " "+sumMax);
-    }
+ }
+}
 }
