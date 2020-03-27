@@ -1,6 +1,5 @@
 import java.util.*;
 import java.lang.Math; 
-
 public class Main{
 
 public static void main(String[] args) {
@@ -10,6 +9,7 @@ public static void main(String[] args) {
   for(int i=0;i<n;i++){
       arr[i] = scn.nextInt();
   }
+
   int k = n-1;
   int temp =0;
   for(int j=0;j<n/2;j++){
